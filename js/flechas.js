@@ -21,7 +21,7 @@ var papel = cuadro.getContext("2d");
 var x = 300;
 var y = 250;
 
-dibujarLinea("black", 149, 149, 151, 151, papel);
+dibujarLinea("black", -x, -y, x, y, papel);
 
 function dibujarTeclado(evento) {
 	var Color = "Black";
