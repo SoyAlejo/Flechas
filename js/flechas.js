@@ -1,4 +1,4 @@
-alert("Funciono");
+alert("Asia?");
 var teclas = {
 	UP: 38,
 	DOWN: 40,
