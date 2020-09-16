@@ -15,17 +15,17 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo) {
 	lienzo.closePath();
 }
 console.log(teclas);
-document.addEventListener("keydown", dibujarTeclado);
+document.addEventListener("keyup", dibujarTeclado);
 var cuadro = document.getElementById("areaDeDibujo");
 var papel = cuadro.getContext("2d");
-var x = 150;
-var y = 150;
+var x = 300;
+var y = 250;
 
 dibujarLinea("black", 149, 149, 151, 151, papel);
 
 function dibujarTeclado(evento) {
-	var Color = "blue";
-	var movimento = 1;
+	var Color = "Black";
+	var movimento = 8;
 	switch (evento.keyCode) {
 		case teclas.UP:
 			dibujarLinea(Color, x, y, x, y - movimento, papel);
